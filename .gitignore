@@ -1,0 +1,9 @@
+﻿# игнорировать директории
+bin/
+.settings
+# игнорировать файлы
+.classpath
+.project
+*.class
+*.bin
+*.txt
