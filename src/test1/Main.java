@@ -16,6 +16,8 @@ import listen.lib.serializator.*;
 
 public class Main{
     
+	private static String fileName = "testSerializable.dat";
+	
     public static void main (String args[]){
     	
 		try {
@@ -24,7 +26,7 @@ public class Main{
 			
 			//ControllerToSerializator cr = new ControllerToSerializator(sr);
 			
-			new ControllerToSerializator(new Serializator<Person>(Glob.filePath,"testSerializable.dat"));
+			new ControllerToSerializator(new Serializator<Person>(Glob.filePath,fileName));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
