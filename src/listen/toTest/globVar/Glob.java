@@ -14,5 +14,5 @@ public class Glob{
 	}
 	
 	/* для java.io */
-    public static String filePath = "src/toTest/io/filePath/";
+    public static String filePath = "sources/filePath/";
 }

@@ -16,17 +16,19 @@ import listen.lib.serializator.*;
 
 public class Main{
     
-	private static String fileName = "testSerializable.dat";
+	// private static String filePerson = "testSerializable.dat";
+	private static String fileAnimals = "testSerializableAnimals.dat";
 	
     public static void main (String args[]){
     	
 		try {
 			
-			//Serializator<Person> sr = new Serializator<Person>(Glob.filePath,"testSerializable.dat");
 			
-			//ControllerToSerializator cr = new ControllerToSerializator(sr);
 			
-			new ControllerToSerializator(new Serializator<Person>(Glob.filePath,fileName));
+			// new ControllerToSerializator(new Serializator<Person>(Glob.filePath,filePerson));
+			
+			new ControllerToSerializatorAnimals(new Serializator<Animals>(Glob.filePath,fileAnimals));
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
