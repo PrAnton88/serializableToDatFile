@@ -1,9 +1,9 @@
 ﻿# игнорировать директории
 bin/
-.settings
+#.settings
 # игнорировать файлы
-.classpath
-.project
+#.classpath
+#.project
 *.class
 *.bin
-*.txt
+#*.txt
