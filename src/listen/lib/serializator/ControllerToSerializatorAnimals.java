@@ -51,14 +51,14 @@ public class ControllerToSerializatorAnimals extends Controller<Serializator<Ani
 	}
 	
 	public void write() throws IOException{
-		Print.ln("команда write - новая запись");
 		
-		String name = console.readLine("Тип: ");
-		String saying = console.readLine("Говорит: ");
-		
-		/* запись в файл */
 		try{
+			Print.ln("команда write - новая запись");
 			
+			String name = console.readLine("Тип: ");
+			String saying = console.readLine("Говорит: ");
+		
+			/* запись в файл */
 			serialize.write(new Animals(name,saying));
 			
 		}catch(NullPointerException  ex){

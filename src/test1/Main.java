@@ -17,7 +17,7 @@ import listen.lib.serializator.*;
 public class Main{
     
 	// private static String filePerson = "testSerializable.dat";
-	private static String fileAnimals = "testSerializableAnimals.dat";
+	private static String fileAnimals = "testSerializableAnimals4.dat";
 	
     public static void main (String args[]){
     	

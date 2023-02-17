@@ -22,15 +22,24 @@ public class Serializator<A extends Serializable>{
 	ArrayList<A> listObjest = new ArrayList<A>();
 	
 	private String fileToSerializ;
+	// private FileOutputStream anyDatFile;
 	
-	public Serializator(String fPath, String fileName){
+	public Serializator(String fPath, String fileName) throws IOException{
 		
 		fileToSerializ = fPath+fileName;
 		
-		readObject();
+		/* если файла не существует создать его */
+		File anyDatFile = new File(fileToSerializ);
+		if(!anyDatFile.exists()){
+			new FileOutputStream(fileToSerializ);
+			
+		}else{
+			readObject();
+		}
 	}
 	
 	private void write(){
+		
 		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileToSerializ)))
 		{
 			
