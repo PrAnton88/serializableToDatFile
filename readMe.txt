@@ -1,4 +1,6 @@
 	
+	any data
+	
 	вариант 1
 	когда TestGenericsInterface<T>
 	и 
